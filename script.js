@@ -3,10 +3,10 @@ let answers = ["Outlook purrfect",
     "It is decidedly so",
     "Without a doubt",
     "Yes - definitely",
-    "You may rely on it",
+    "You betcha",
     "As I see it, yes",
-    "Most likely", "The great whisker gods tell me yes",
-    "Yes", "Signs point to yes",
+    "Pet me", "The great whisker gods tell me yes",
+    "*retches up furball on carpet*", "Signs point to yes",
     "Fuck off",
     "Feed me first but probably no",
     "My sources say no",
@@ -14,9 +14,10 @@ let answers = ["Outlook purrfect",
     "Leave me alone",
     "Meow",
     "I'll need a nap before I can answer that",
-    "Better not tell you now",
+    "Can't you see I'm trying to ignore you?",
     "I wanna go outside",
-    "Concentrate and ask again"];
+    "Concentrate and ask again", "*licks crotch*", "*stares at random point in distance*",
+    "F's in chat", "You are guest"];
 
 window.onload = function() {
     let answer = document.getElementById("answer");
