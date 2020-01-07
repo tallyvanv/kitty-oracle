@@ -17,20 +17,22 @@ let answers = ["Outlook purrfect",
     "Can't you see I'm trying to ignore you?",
     "I wanna go outside",
     "Concentrate and ask again", "*licks crotch*", "*stares at random point in distance*",
-    "F's in chat", "You are guest"];
+    "F's in chat", "You are guest", "41"];
 
 window.onload = function() {
     let answer = document.getElementById("answer");
     let ask = document.getElementById("ask");
     let question = document.getElementById("question");
+    let textfield = document.getElementById("textfield");
 
-    ask.addEventListener("click", function() {
-        if (question.value.length < 1) {
+    question.addEventListener("submit", function(event) {
+        if (textfield.value.length < 1) {
             alert('Enter a question!');
         } else {
             answer.innerText = "";
             let num = Math.floor(Math.random() * Math.floor(answers.length));
             answer.innerText = answers[num];
         }
+        event.preventDefault()
     });
 };
